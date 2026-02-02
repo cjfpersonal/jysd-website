@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { APP_LOGO, APP_TITLE } from "@/const";
 import logoFont from "@assets/logo-font.png";
+import specsProduct from "@assets/specs-product.png";
+import CompareTable from "@/components/CompareTable";
+
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-white">
@@ -253,8 +256,83 @@ export default function Home() {
           </p>
 
           <div className="max-w-6xl mx-auto space-y-16">
-            {/* Product 1: GIBOT */}
+            {/* Product 1: 老年康养智能跌倒检测 */}
             <div className="bg-gradient-to-br from-[#2C5F7C]/5 to-white p-8 md:p-12 rounded-3xl">
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                  <div className="inline-block px-4 py-2 bg-[#2C5F7C]/10 rounded-full mb-4">
+                    <span className="text-[#2C5F7C] font-semibold text-sm">智慧康养</span>
+                  </div>
+                  <h3 className="text-3xl font-bold text-gray-900 mb-4">老年康养智能跌倒检测</h3>
+                  <p className="text-gray-600 leading-relaxed mb-6">
+                    24/7 全天候非接触式监测，采用医疗级毫米波雷达和 AI 深度学习技术。隐私优先，守护您挚爱的家人。
+                  </p>
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-6 h-6 bg-[#4A9B8E] rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <span className="text-gray-700">双传感融合：毫米波雷达 + 红外热成像，交叉验证跌倒事件</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-6 h-6 bg-[#4A9B8E] rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <span className="text-gray-700">隐私监护：非接触式检测，无光学摄像头，保护个人隐私</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-6 h-6 bg-[#4A9B8E] rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <span className="text-gray-700">事件验证：15 秒热成像回放，报警可远程确认</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-6 h-6 bg-[#4A9B8E] rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <span className="text-gray-700">独立通讯：内置 4G LTE + 双向语音，无需 Wi-Fi 即插即用</span>
+                    </div>
+                  </div>
+                  <div className="flex items-center space-x-4">
+                    <span className="text-sm text-gray-500">目标市场</span>
+                    <div className="flex space-x-2">
+                      <span className="px-3 py-1 bg-[#2C5F7C]/10 text-[#2C5F7C] rounded-full text-sm">居家养老</span>
+                      <span className="px-3 py-1 bg-[#2C5F7C]/10 text-[#2C5F7C] rounded-full text-sm">养老院</span>
+                      <span className="px-3 py-1 bg-[#2C5F7C]/10 text-[#2C5F7C] rounded-full text-sm">康复中心</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-gradient-to-br from-[#2C5F7C]/10 to-[#4A9B8E]/10 rounded-2xl p-8 flex items-center justify-center min-h-[400px]">
+                  <div className="text-center">
+                    <div className="bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg" style={{ width: '100%', height: '100%' }}>
+                      <img src={specsProduct} alt="产品示意图" />
+                      {/* <svg className="w-16 h-16 text-[#2C5F7C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg> */}
+                    </div>
+                    <p className="text-gray-600 text-sm">老年康养智能跌倒检测</p>
+                  </div>
+                </div>
+              </div>
+              <div className="container">
+                <div className="section-intro">
+                  <h2>雷达 + 红外：更卓越的感知方案</h2>
+                  <p>我们要结合了两种强大的传感技术，以实现最高的可靠性。</p>
+                </div>
+                <CompareTable />
+              </div>
+            </div>
+
+            {/* Product 1: GIBOT */}
+            {/* <div className="bg-gradient-to-br from-[#2C5F7C]/5 to-white p-8 md:p-12 rounded-3xl">
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
                   <div className="inline-block px-4 py-2 bg-[#2C5F7C]/10 rounded-full mb-4">
@@ -318,7 +396,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* Product 2: Humanoid Robot */}
             <div className="bg-gradient-to-br from-[#4A9B8E]/5 to-white p-8 md:p-12 rounded-3xl">
@@ -455,10 +533,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Partners Section */}
-      <section id="partners" className="py-20 bg-gradient-to-br from-[#2C5F7C]/5 via-white to-[#4A9B8E]/5">
+      < section id="partners" className="py-20 bg-gradient-to-br from-[#2C5F7C]/5 via-white to-[#4A9B8E]/5" >
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">战略合作</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-[#2C5F7C] to-[#4A9B8E] mx-auto mb-4"></div>
@@ -526,10 +604,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-white">
+      < section id="contact" className="py-20 bg-white" >
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">联系我们</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-[#2C5F7C] to-[#4A9B8E] mx-auto mb-16"></div>
@@ -605,10 +683,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Footer */}
-      <footer className="bg-gradient-to-r from-[#2C5F7C] to-[#4A9B8E] text-white py-8">
+      < footer className="bg-gradient-to-r from-[#2C5F7C] to-[#4A9B8E] text-white py-8" >
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="mb-4 md:mb-0">
@@ -620,8 +698,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </footer>
-    </div>
+      </footer >
+    </div >
   );
 }
 
